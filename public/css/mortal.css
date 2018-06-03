@@ -1,0 +1,235 @@
+#mortal {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background: #fff;
+    margin: 0 auto;
+}
+.character {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: 200px;
+}
+.character .head {
+    height: 38px;
+    width: 30px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 14px;
+    margin-bottom: -3px;
+    position: relative;
+}
+.character .head .face {
+    position: absolute;
+    width: 16px;
+    height: 18px;
+    border-radius: 14px 0px 0px 14px;
+    background: #2193d6;
+    right: 0;
+    top: 10px;
+}
+.character .head .face:before {
+    content: "";
+    height: 9px;
+    width: 16px;
+    background: #ea9c3c;
+    position: absolute;
+    border-radius: 14px 0 0 0;
+}
+.character .head .face:after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 3px;
+    background: #464646;
+    right: 0;
+    top: 3px;
+}
+.character .body {
+    height: 0;
+    width: 88px;
+    border-top: 100px solid #000;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 60;
+}
+.character .body .breast-cut {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 70px solid #000;
+    position: absolute;
+    left: -1px;
+    top: -100px;
+    z-index: 70;
+}
+.character .body .suite {
+    height: 0;
+    width: 88px;
+    border-top: 100px solid #2193d6;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: absolute;
+    left: -25px;
+    top: -100px;
+}
+.character .body .hand {
+
+}
+.character .body .hand-left {
+    width: 16px;
+    height: 60px;
+    background: #ea9c3c;
+    border-radius: 65px / 130px;
+    position: absolute;
+    left: -28px;
+    top: -94px;
+    z-index: 80;
+    box-shadow: 0 0 1px 0 #000;
+}
+.character .body .hand-left .bot {
+    border-radius: 130px / 65px;
+    width: 52px;
+    height: 14px;
+    background: #ea9c3c;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    transform: rotate(-10deg);
+    box-shadow: 7px 0px 2px 1px #000;
+}
+.character .body .hand-left .bot:after {
+    content: "";
+    position: absolute;
+    width: 56%;
+    background: #000;
+    height: 14px;
+    left: 30%;
+    z-index: 11;
+}
+.character .body .hand-left .bot .wrist {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    border-radius: 14px 6px 6px 14px;
+    background: #ea9c3c;
+    right: -10px;
+    z-index: 10;
+    top: -2px;
+    box-shadow: 0 0 1px #000;
+}
+.character .body .hand-right {
+    width: 16px;
+    height: 50px;
+    background: #ea9c3c;
+    border-radius: 65px / 130px;
+    position: absolute;
+    right: -28px;
+    top: -94px;
+    box-shadow: 0 0 1px 0 #000;
+}
+.character .body .hand-right .bot {
+    border-radius: 130px / 65px;
+    width: 14px;
+    height: 42px;
+    background: #ea9c3c;
+    position: absolute;
+    bottom: -34px;
+    left: 4px;
+    transform: rotate(-7deg);
+    box-shadow: 0 2px 1px 0 #000;
+}
+.character .body .hand-right .bot:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: #000;
+    height: 48%;
+    left: 0;
+    top: 30%;
+    z-index: 11;
+}
+.character .body .hand-right .bot .wrist {
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    border-radius: 14px 14px 6px 6px;
+    background: #ea9c3c;
+    left: -2px;
+    z-index: 10;
+    bottom: -4px;
+    box-shadow: 0 0 1px #000
+}
+.character .footer {
+    height: 0;
+    width: 74px;
+    border-bottom: 35px solid #000;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-radius: 5px;
+    margin: -30px auto 0 auto;
+    position: relative;
+    z-index: 40;
+}
+.character .footer .suite {
+    background: #2193d6;
+    width: 24px;
+    height: 72px;
+    margin: 0 auto;
+    border-radius: 3px;
+    z-index: 50;
+    position: relative;
+    box-shadow: 0px 0px 1px 0px #000;
+}
+.character .footer .foot {
+    height: 0;
+    width: 30px;
+    border-top: 100px solid #000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    top: 18px;
+}
+.character .footer .foot:after {
+    content: "";
+    height: 50px;
+    width: 16px;
+    background: #2193d6;
+    position: absolute;
+    top: -50px;
+    border-radius: 15px;
+}
+.character .footer .foot-left {
+    left: -30px;
+    border-radius: 23px 0px 0px 0px;
+    transform: rotate(15deg);
+}
+.character .footer .foot-right {
+    right: -30px;
+    border-radius: 0px 23px 0px 0px;
+    transform: rotate(-15deg);
+}
+.character .footer .foot:before {
+    content: "";
+    background: #000000;
+    width: 16px;
+    height: 22px;
+    position: absolute;
+    bottom: -17px;
+    border-radius: 20px;
+}
+.character .footer .foot-left:before {
+    left: -6px;
+    transform: skew(-45deg);
+}
+.character .footer .foot-right:before {;
+    right: -6px;
+    transform: skew(45deg);
+}

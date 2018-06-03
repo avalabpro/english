@@ -1,0 +1,64 @@
+table {
+    color: rgba(0, 0, 0, 0.66);
+    font-size: 16px;
+    border-collapse: collapse;
+    float: left;
+    margin: 20px 20px 0 0;
+}
+table thead td {
+    text-align: center;
+}
+table td {
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+table td span {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+table td span.verb {
+    color: #6cd900;
+}
+table td.left {
+    border-right: none;
+}
+table td.center {
+    border-right: none;
+    border-left: none;
+}
+table td.right {
+    border-left: none;
+}
+table td.bottom {
+    border-bottom: none;
+}
+table td.top {
+    border-top: none;
+}
+table td.title {
+    background: rgba(128, 128, 128, 0.5);
+}
+table td.add {
+    background: rgba(176, 226, 199, 0.5);
+}
+.content {
+    width: 100%;
+}
+.content {
+    padding:  0 2em;
+}
+#generate-russian {
+    text-align: center;
+    padding: 2em 0;
+    font-size: 30px;
+}
+#generate-english {
+    text-align: center;
+    padding: 2em 0;
+    font-size: 30px;
+    color: #17a600;
+}
+#generate-russian:first-letter, #generate-english:first-letter {
+    text-transform: capitalize;
+}
